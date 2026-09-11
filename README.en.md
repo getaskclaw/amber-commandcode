@@ -1,6 +1,6 @@
 # amber-commandcode
 
-Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results of models served by CommandCode (api.commandcode.ai). **Cases stay private; results are public.** 中文说明:[README.md](README.md)
+Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results of models served by CommandCode (api.commandcode.ai). **Cases stay private; results are public.** 中文说明：[README.md](README.md)
 
 ## What this is
 
