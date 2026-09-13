@@ -25,7 +25,7 @@ Same model name, same provider, two runs can still score differently — inferen
 
 | Issue | Content | Headline |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | deepseek/deepseek-v4.1-flash full-library debut (23 cases, GA day) | **17/23** (15/21 public subset); full marks on the UI-build paper (third model ever); 8/9 on the defense case that used to kill everyone; all three same-name lanes verified genuine v4.1; adversarial-review and vision are its weak faces |
+| [2026-W37](results/2026-W37.md) | deepseek/deepseek-v4.1-flash full-library debut (23 cases, GA day) | **17/23** (15/21 public subset); full marks on the UI-build paper (fifth repo to publish a pass); 8/9 on the defense case that used to kill everyone; all three same-name lanes verified genuine v4.1; adversarial-review and vision are its weak faces |
 
 ## Disclaimer
 
