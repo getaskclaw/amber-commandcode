@@ -1,0 +1,163 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": "同一个 v4.1，三条道同日同档：17 / 16 / 14（/23 案）",
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "cc 道独有：UI 满分 12/12 + 防御钉纪录 8/9 + 归因钉最佳档 13/15；预览版已下线，成绩定格",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "width": 460,
+ "height": 300,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "band": "CommandCode",
+      "seg": "实得",
+      "v": 17,
+      "ord": 1
+     },
+     {
+      "band": "OpenCode Go",
+      "seg": "实得",
+      "v": 16,
+      "ord": 1
+     },
+     {
+      "band": "官方预览",
+      "seg": "实得",
+      "v": 14,
+      "ord": 1
+     }
+    ]
+   },
+   "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 3,
+    "cornerRadiusTopRight": 3
+   },
+   "encoding": {
+    "x": {
+     "field": "band",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "CommandCode",
+       "OpenCode Go",
+       "官方预览"
+      ]
+     },
+     "axis": {
+      "title": null,
+      "labelFontSize": 12
+     }
+    },
+    "y": {
+     "field": "v",
+     "type": "quantitative",
+     "aggregate": "sum",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "通过案数（/ 23）"
+     }
+    },
+    "color": {
+     "field": "seg",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "实得",
+       "混杂"
+      ],
+      "range": [
+       "#5b8fc9",
+       "#e8a0a0"
+      ]
+     },
+     "legend": null
+    },
+    "order": {
+     "field": "ord",
+     "type": "quantitative"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "band": "CommandCode",
+      "total": 17,
+      "label": "17"
+     },
+     {
+      "band": "OpenCode Go",
+      "total": 16,
+      "label": "16"
+     },
+     {
+      "band": "官方预览",
+      "total": 14,
+      "label": "14"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "dy": -8,
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "color": "#333"
+   },
+   "encoding": {
+    "x": {
+     "field": "band",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "CommandCode",
+       "OpenCode Go",
+       "官方预览"
+      ]
+     }
+    },
+    "y": {
+     "field": "total",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     }
+    },
+    "text": {
+     "field": "label"
+    }
+   }
+  }
+ ]
+}
