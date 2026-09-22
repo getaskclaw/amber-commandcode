@@ -28,6 +28,7 @@ Same model name, same provider, two runs can still score differently — inferen
 | Issue | Content | Headline |
 |---|---|---|
 | [2026-W37](results/2026-W37.md) | deepseek/deepseek-v4.1-flash full-library debut (23 cases, GA day) | **17/23** (15/21 public subset); full marks on the UI-build paper (fifth repo to publish a pass); 8/9 on the defense case that used to kill everyone; all three same-name lanes verified genuine v4.1; adversarial-review and vision are its weak faces |
+| [2026-W38 correction notice](results/2026-W38-correction.en.md) | W38 full-library review: 0 cells reversed · 14 held here; plus the triple-exam mimo legs filed | 14 W37 ladder papers held (2 high-band cells + case-level tallies), no re-exam while the lane is frozen; addendum: mimo-v2.6-pro 17 pass / 6 fail / 1 held, mimo-v2.6-flash 13 pass / 6 fail / 5 held (A-be92627f dies differently per leg — recorded per paper) |
 
 ## Disclaimer
 
