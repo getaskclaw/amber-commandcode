@@ -1,0 +1,155 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": [
+   "W37 report card: deepseek-v4.1-flash 17/23",
+   "(GA day, effort=high; both calibers from the same 2026-W37 issue)"
+  ],
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "public 21-case subset = library minus the 2 cases added in W37 (A-6fbeb363 / A-8c909d0a)",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "data": {
+  "values": [
+   {
+    "caliber": "23-case library",
+    "pass": 17,
+    "label": "17/23"
+   },
+   {
+    "caliber": "public 21-case subset",
+    "pass": 15,
+    "label": "15/21"
+   }
+  ]
+ },
+ "width": 420,
+ "height": 300,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 3,
+    "cornerRadiusTopRight": 3
+   },
+   "encoding": {
+    "x": {
+     "field": "caliber",
+     "type": "nominal",
+     "sort": [
+      "23-case library",
+      "public 21-case subset"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 13,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "cases passed",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "color": {
+     "field": "caliber",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "23-case library",
+       "public 21-case subset"
+      ],
+      "range": [
+       "#00838F",
+       "#26C6DA"
+      ]
+     },
+     "legend": null
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "baseline": "bottom",
+    "dy": -5,
+    "fontSize": 13,
+    "color": "#006064"
+   },
+   "encoding": {
+    "x": {
+     "field": "caliber",
+     "type": "nominal",
+     "sort": [
+      "23-case library",
+      "public 21-case subset"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 13,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "cases passed",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "text": {
+     "field": "label",
+     "type": "nominal"
+    }
+   }
+  }
+ ]
+}

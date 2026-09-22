@@ -1,0 +1,155 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": [
+   "W37 成绩单：deepseek-v4.1-flash 17/23",
+   "（GA 当日 high 档；双口径同出 2026-W37 期文）"
+  ],
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "公共 21 案子集 = 全库剔除 W37 新增 2 案（A-6fbeb363 / A-8c909d0a）",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "data": {
+  "values": [
+   {
+    "caliber": "全库 23 案",
+    "pass": 17,
+    "label": "17/23"
+   },
+   {
+    "caliber": "公共 21 案子集",
+    "pass": 15,
+    "label": "15/21"
+   }
+  ]
+ },
+ "width": 420,
+ "height": 300,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 3,
+    "cornerRadiusTopRight": 3
+   },
+   "encoding": {
+    "x": {
+     "field": "caliber",
+     "type": "nominal",
+     "sort": [
+      "全库 23 案",
+      "公共 21 案子集"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 13,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "通过案数",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "color": {
+     "field": "caliber",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "全库 23 案",
+       "公共 21 案子集"
+      ],
+      "range": [
+       "#00838F",
+       "#26C6DA"
+      ]
+     },
+     "legend": null
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "baseline": "bottom",
+    "dy": -5,
+    "fontSize": 13,
+    "color": "#006064"
+   },
+   "encoding": {
+    "x": {
+     "field": "caliber",
+     "type": "nominal",
+     "sort": [
+      "全库 23 案",
+      "公共 21 案子集"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 13,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "通过案数",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "text": {
+     "field": "label",
+     "type": "nominal"
+    }
+   }
+  }
+ ]
+}
