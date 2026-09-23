@@ -38,9 +38,7 @@ None. This repo has no adjudicated cell.
 > The hold table's 14 rows = 14 papers: 2 of them have standalone matrix cells (high band), the other 12 enter the case-level tally only — a re-exam reversal would move the case-level tallies rather than single cells.
 > No re-exam while the lane is frozen.
 
-## 4. Method
-
-## Method: why we correct, how we checked, how we prevent
+## 4. Method: why we correct, how we checked, how we prevent
 
 **Why we correct.**
 These are our published numbers; if they are wrong, we are the ones who fix them. This review
