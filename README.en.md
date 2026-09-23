@@ -6,6 +6,8 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results o
 
 We run the same private exam for models on a schedule and publish only the scorecard; the questions and scoring details stay private.
 
+![Latest board composition (2026-W39)](results/assets/2026-W39-board.en.png?v=20260923)
+
 - A "lane" is one vendor's shop/API for a model name; a "case" is one task; a "run" is one sitting; a "band" is the effort band, the thinking-effort setting.
 - One `results/YYYY-Www.md` per issue: same cases, same exam program (the harness, which runs the exam and scores it), full library per model; the same model name across vendors side by side.
 - Each issue pins: library size and hashes, per-case defect-hunt score and pass/fail (the d2 score — our score for mistake kind and severity; the algorithm is private, and pass/fail is decided by each case's pass bar), terminal states (how the run process exited), token usage (when the lane reports it) and latency, environment fingerprint, and a qualitative verdict written under evidence discipline.
