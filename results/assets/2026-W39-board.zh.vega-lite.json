@@ -1,0 +1,245 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "title": {
+    "text": "2026-W39 榜单构成（CommandCode 三连考）",
+    "fontSize": 16,
+    "anchor": "start",
+    "subtitle": "mimo 两腿已完赛；grok-4.7 待 09-29 周窗重置原道重考；m26f 文本三案经复核结案改定 invalid（不定模型罪）",
+    "subtitleFontSize": 11,
+    "subtitleColor": "#777",
+    "subtitlePadding": 6
+  },
+  "width": 480,
+  "height": 160,
+  "config": {
+    "font": "Noto Sans CJK SC",
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFontSize": 12
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "lane": "xai/grok-4.7（未完赛）",
+        "cat": "胜 pass",
+        "ord": 0,
+        "n": 6,
+        "pos": 3.0
+      },
+      {
+        "lane": "xai/grok-4.7（未完赛）",
+        "cat": "负 fail",
+        "ord": 1,
+        "n": 3,
+        "pos": 7.5
+      },
+      {
+        "lane": "xai/grok-4.7（未完赛）",
+        "cat": "挂起 held",
+        "ord": 2,
+        "n": 7,
+        "pos": 12.5
+      },
+      {
+        "lane": "xai/grok-4.7（未完赛）",
+        "cat": "invalid",
+        "ord": 3,
+        "n": 2,
+        "pos": 17.0
+      },
+      {
+        "lane": "xai/grok-4.7（未完赛）",
+        "cat": "未考 not run",
+        "ord": 4,
+        "n": 6,
+        "pos": 21.0
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "胜 pass",
+        "ord": 0,
+        "n": 17,
+        "pos": 8.5
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "负 fail",
+        "ord": 1,
+        "n": 6,
+        "pos": 20.0
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "挂起 held",
+        "ord": 2,
+        "n": 0,
+        "pos": 23.0
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "invalid",
+        "ord": 3,
+        "n": 1,
+        "pos": 23.5
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "未考 not run",
+        "ord": 4,
+        "n": 0,
+        "pos": 24.0
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "胜 pass",
+        "ord": 0,
+        "n": 13,
+        "pos": 6.5
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "负 fail",
+        "ord": 1,
+        "n": 6,
+        "pos": 16.0
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "挂起 held",
+        "ord": 2,
+        "n": 0,
+        "pos": 19.0
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "invalid",
+        "ord": 3,
+        "n": 5,
+        "pos": 21.5
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "未考 not run",
+        "ord": 4,
+        "n": 0,
+        "pos": 24.0
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 26
+      },
+      "encoding": {
+        "y": {
+          "field": "lane",
+          "type": "nominal",
+          "sort": null,
+          "axis": {
+            "title": null,
+            "labelLimit": 0
+          }
+        },
+        "x": {
+          "field": "n",
+          "type": "quantitative",
+          "stack": true,
+          "scale": {
+            "domain": [
+              0,
+              24
+            ]
+          },
+          "axis": {
+            "title": "24 案全库",
+            "grid": true,
+            "values": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              24
+            ]
+          }
+        },
+        "color": {
+          "field": "cat",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "胜 pass",
+              "负 fail",
+              "挂起 held",
+              "invalid",
+              "未考 not run"
+            ],
+            "range": [
+              "#2E7D32",
+              "#C62828",
+              "#EF6C00",
+              "#6A1B9A",
+              "#9E9E9E"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom"
+          }
+        },
+        "order": {
+          "field": "ord",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "white",
+        "fontSize": 12
+      },
+      "transform": [
+        {
+          "filter": "datum.n > 0"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "lane",
+          "type": "nominal",
+          "sort": null,
+          "axis": {
+            "title": null,
+            "labelLimit": 0
+          }
+        },
+        "x": {
+          "field": "pos",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              24
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "n",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

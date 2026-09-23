@@ -106,6 +106,7 @@ sharing one bundle) count as **one case**; for repeated runs the final attempt d
 - **Same case, different death — recorded per lane**: A-be92627f is "genuine attempt not
   delivered" = fail on the mimo-v2.6-pro leg, and `invalid_infrastructure` = bench hold on the
   mimo-v2.6-flash leg. Each paper is recorded by its own leg's terminal state.
+- **Review closed (2026-09-23)**: mimo-v2.6-flash's three review-held cases (A-791e90ac / A-1fd3683a / A-13854d9d) were reclassified to `invalid_infrastructure` after forensic review (upstream truncation swallowed the already-formed answers — no fault to the model). Final buckets for the leg: **13 pass / 6 fail / 5 invalid, zero held**; the [2026-W39 issue](2026-W39.en.md) is in sync.
 - **Wire note**: both lanes' state.db is single-brain clean (59/88 usage rows, zero foreign
   brains); the external-agent lane is handled under the declared discipline, with no wire audit.
 - Every number is computed by script from the manifests (27 runs / 24 cases, both legs complete);

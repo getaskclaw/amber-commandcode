@@ -1,0 +1,245 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "title": {
+    "text": "2026-W39 board composition (CommandCode triple)",
+    "fontSize": 16,
+    "anchor": "start",
+    "subtitle": "both mimo legs complete; grok-4.7 awaits the 09-29 weekly reset; m26f's three text cases reclassified invalid after review (no fault to the model)",
+    "subtitleFontSize": 11,
+    "subtitleColor": "#777",
+    "subtitlePadding": 6
+  },
+  "width": 480,
+  "height": 160,
+  "config": {
+    "font": "Noto Sans CJK SC",
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "legend": {
+      "labelFontSize": 12
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "lane": "xai/grok-4.7 (incomplete)",
+        "cat": "pass",
+        "ord": 0,
+        "n": 6,
+        "pos": 3.0
+      },
+      {
+        "lane": "xai/grok-4.7 (incomplete)",
+        "cat": "fail",
+        "ord": 1,
+        "n": 3,
+        "pos": 7.5
+      },
+      {
+        "lane": "xai/grok-4.7 (incomplete)",
+        "cat": "held",
+        "ord": 2,
+        "n": 7,
+        "pos": 12.5
+      },
+      {
+        "lane": "xai/grok-4.7 (incomplete)",
+        "cat": "invalid",
+        "ord": 3,
+        "n": 2,
+        "pos": 17.0
+      },
+      {
+        "lane": "xai/grok-4.7 (incomplete)",
+        "cat": "not run",
+        "ord": 4,
+        "n": 6,
+        "pos": 21.0
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "pass",
+        "ord": 0,
+        "n": 17,
+        "pos": 8.5
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "fail",
+        "ord": 1,
+        "n": 6,
+        "pos": 20.0
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "held",
+        "ord": 2,
+        "n": 0,
+        "pos": 23.0
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "invalid",
+        "ord": 3,
+        "n": 1,
+        "pos": 23.5
+      },
+      {
+        "lane": "mimo-v2.6-pro",
+        "cat": "not run",
+        "ord": 4,
+        "n": 0,
+        "pos": 24.0
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "pass",
+        "ord": 0,
+        "n": 13,
+        "pos": 6.5
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "fail",
+        "ord": 1,
+        "n": 6,
+        "pos": 16.0
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "held",
+        "ord": 2,
+        "n": 0,
+        "pos": 19.0
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "invalid",
+        "ord": 3,
+        "n": 5,
+        "pos": 21.5
+      },
+      {
+        "lane": "mimo-v2.6-flash",
+        "cat": "not run",
+        "ord": 4,
+        "n": 0,
+        "pos": 24.0
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 26
+      },
+      "encoding": {
+        "y": {
+          "field": "lane",
+          "type": "nominal",
+          "sort": null,
+          "axis": {
+            "title": null,
+            "labelLimit": 0
+          }
+        },
+        "x": {
+          "field": "n",
+          "type": "quantitative",
+          "stack": true,
+          "scale": {
+            "domain": [
+              0,
+              24
+            ]
+          },
+          "axis": {
+            "title": "24-case library",
+            "grid": true,
+            "values": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              24
+            ]
+          }
+        },
+        "color": {
+          "field": "cat",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "pass",
+              "fail",
+              "held",
+              "invalid",
+              "not run"
+            ],
+            "range": [
+              "#2E7D32",
+              "#C62828",
+              "#EF6C00",
+              "#6A1B9A",
+              "#9E9E9E"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom"
+          }
+        },
+        "order": {
+          "field": "ord",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "white",
+        "fontSize": 12
+      },
+      "transform": [
+        {
+          "filter": "datum.n > 0"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "lane",
+          "type": "nominal",
+          "sort": null,
+          "axis": {
+            "title": null,
+            "labelLimit": 0
+          }
+        },
+        "x": {
+          "field": "pos",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              24
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "n",
+          "type": "quantitative"
+        }
+      }
+    }
+  ]
+}

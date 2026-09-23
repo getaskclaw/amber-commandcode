@@ -85,5 +85,6 @@
 - **mimo-v2.6-pro 17/6/1**：唯一挂起 = A-d511f9e8（`invalid_infrastructure`，零交付，案级考场缺陷，同案在本周 grok-4.7 腿亦 invalid）。原「no deliverable」的 A-be92627f 在**本道**属**真作答未交付**——按判负记，不记挂起。
 - **mimo-v2.6-flash 13/6/5**：5 个挂起 = 基建挂起 2（A-d511f9e8、A-be92627f，均 `invalid_infrastructure`）+ **复核挂起 3**（A-791e90ac、A-1fd3683a、A-13854d9d —— 三卷 terminal 为 `valid_task_failure` 且 d2 = `no code block`，跨脑同病，**不定罪**：既不当判过，也不当判负，具名挂起，待复核）。同案在 mimo-v2.6-pro 腿有卷有分（6/6、2/2、5/5），故题面可过；flash 腿的 no code block 记为其交付可靠性观察。
 - **同案不同死法，各卷各记**：A-be92627f 在 mimo-v2.6-pro 腿是「真作答未交付」= 判负，在 mimo-v2.6-flash 腿是 `invalid_infrastructure` = 基建挂起；两卷各按各腿的 terminal 记，不混。
+- **复核结案更新（2026-09-23）**：mimo-v2.6-flash 的 3 个复核挂起案（A-791e90ac / A-1fd3683a / A-13854d9d）经法医取证改定 `invalid_infrastructure`（基建·工具面：上游截断吞掉已成形的答案，不定模型罪）——该腿终局桶 = **13 胜 / 6 负 / 5 invalid，零挂起**；[2026-W39 期文](2026-W39.md) 已同步。
 - **验脑注**：两道 state.db 单脑纯净（各 59/88 条 usage 零杂脑）；外部 agent 驱动道按声明口径处理，不做验脑。
 - 数字由脚本从 manifest 机器算出（27 卷/24 案两腿齐），禁手填。本页发布时 mimo-v2.6-flash 腿已完赛，本仓 2026-W39 期文的「在考」行按截稿快照保留，以本加餐为准。

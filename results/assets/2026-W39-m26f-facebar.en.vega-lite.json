@@ -5,7 +5,7 @@
   "text": "mimo-v2.6-flash per-face completion (2026-W39)",
   "fontSize": 16,
   "anchor": "start",
-  "subtitle": "CommandCode lane · high band · 24-case library; held cases excluded from denominators",
+  "subtitle": "CommandCode lane · high band · 24-case library; invalid cases excluded from denominators",
   "subtitleFontSize": 11,
   "subtitleColor": "#777",
   "subtitlePadding": 6
@@ -57,7 +57,7 @@
       "face": "verify",
       "v": 0.0,
       "tier": "weak",
-      "lab": "0/1 + 2 invalid held"
+      "lab": "0/1 + 2 invalid"
      },
      {
       "face": "review",
@@ -81,7 +81,7 @@
       "face": "text",
       "v": 0.0,
       "tier": "weak",
-      "lab": "0 scored / 3 held for review"
+      "lab": "no valid papers (3 invalid)"
      }
     ]
    },
@@ -188,7 +188,7 @@
       "face": "verify",
       "v": 0.0,
       "tier": "weak",
-      "lab": "0/1 + 2 invalid held"
+      "lab": "0/1 + 2 invalid"
      },
      {
       "face": "review",
@@ -212,7 +212,7 @@
       "face": "text",
       "v": 0.0,
       "tier": "weak",
-      "lab": "0 scored / 3 held for review"
+      "lab": "no valid papers (3 invalid)"
      }
     ]
    },

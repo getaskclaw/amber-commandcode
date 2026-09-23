@@ -5,7 +5,7 @@
   "text": "mimo-v2.6-flash 逐面完成度（2026-W39）",
   "fontSize": 16,
   "anchor": "start",
-  "subtitle": "CommandCode 道 · high 档 · 24 案全库；挂起案不计入分母",
+  "subtitle": "CommandCode 道 · high 档 · 24 案全库；invalid 案不计入分母",
   "subtitleFontSize": 11,
   "subtitleColor": "#777",
   "subtitlePadding": 6
@@ -57,7 +57,7 @@
       "face": "verify",
       "v": 0.0,
       "tier": "weak",
-      "lab": "0/1 案 + 2 案 invalid 挂起"
+      "lab": "0/1 案 + 2 案 invalid"
      },
      {
       "face": "review",
@@ -81,7 +81,7 @@
       "face": "text",
       "v": 0.0,
       "tier": "weak",
-      "lab": "0 分 / 3 案复核挂起"
+      "lab": "∅ 无有效卷（3 案 invalid）"
      }
     ]
    },
@@ -188,7 +188,7 @@
       "face": "verify",
       "v": 0.0,
       "tier": "weak",
-      "lab": "0/1 案 + 2 案 invalid 挂起"
+      "lab": "0/1 案 + 2 案 invalid"
      },
      {
       "face": "review",
@@ -212,7 +212,7 @@
       "face": "text",
       "v": 0.0,
       "tier": "weak",
-      "lab": "0 分 / 3 案复核挂起"
+      "lab": "∅ 无有效卷（3 案 invalid）"
      }
     ]
    },
