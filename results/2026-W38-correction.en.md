@@ -6,8 +6,9 @@
 
 ## 1. Scope of this correction
 
+- Units in one line: a "case" is one task; a "run" (paper) is one sitting — a case may have several runs; a "cell" is one scored box on the board (one case in one band in one lane); review/vision faces use signed points (credit for real findings, deductions for traps — scores can go negative); "bundle_sha" is the hash fingerprint of a case's content — check it against the public hash list to prove the question set has not changed; "oracle" = the grader; "transcript" = the full answer log; "Full matrix" = the all-cases × all-bands score matrix; "case-level tally" = counted into the case's total only, with no standalone board cell.
 - Count for this repo in this notice: **0 standalone published cells reversed · 14 standalone published cells held** (count = standalone published cells = actual table rows).
-- **Scope in one line**: 14 papers of the W37 five-band ladder are held — the 2 high-band matrix cells (A-cdc3d11a / A-ea80d793) plus the five-band case-level tallies (15/15/17/15) may move up; the lane freeze makes a re-exam infeasible for now.
+- **Scope in one line**: 14 papers of the W37 five-band ladder (the same model measured at five effort bands) are held — the 2 high-band matrix cells (A-cdc3d11a / A-ea80d793) plus the five-band case-level tallies (low/medium/high/xhigh respectively = 15/15/17/15) may move up; the lane freeze (this CommandCode lane is not taking re-exams; no reopening date set) makes a re-exam infeasible for now.
 - Horizon: adjudication signed 2026-09-22; this repo's published numbers stop at 2026-09-21, i.e. a **pre-adjudication** snapshot.
 - Unchanged: questions, oracles, transcripts and intermediate artifacts are never published; the alias and bundle_sha handles are unchanged.
 - Nature of this notice: **additive**. Past conclusions are not withdrawn, deleted or rewritten; reversals take effect through this appendix.
@@ -29,8 +30,8 @@ None. This repo has no adjudicated cell.
 | A-47eea242 | `b4b8d4bb44e3` | W37 | five-band ladder, medium band (case-level tally) | held (re-exam pending) | same |
 | A-ea80d793 | `1d69841b029e` | W37 | five-band ladder, medium band (case-level tally) | held (re-exam pending) | same |
 | A-d9b79b46 | `d6d63130ecc6` | W37 | five-band ladder, medium band (case-level tally) | held (re-exam pending) | same |
-| A-cdc3d11a | `dbb207a3118d` | W37 | five-band ladder, none band (case-level tally) | held (re-exam pending) | same |
-| A-d9b79b46 | `d6d63130ecc6` | W37 | five-band ladder, none band (case-level tally) | held (re-exam pending) | same |
+| A-cdc3d11a | `dbb207a3118d` | W37 | five-band ladder, none band (thinking off; case-level tally) | held (re-exam pending) | same |
+| A-d9b79b46 | `d6d63130ecc6` | W37 | five-band ladder, none band (thinking off; case-level tally) | held (re-exam pending) | same |
 | A-47eea242 | `b4b8d4bb44e3` | W37 | five-band ladder, xhigh band (case-level tally) | held (re-exam pending) | same |
 | A-ea80d793 | `1d69841b029e` | W37 | five-band ladder, xhigh band (case-level tally) | held (re-exam pending) | same |
 | A-d9b79b46 | `d6d63130ecc6` | W37 | five-band ladder, xhigh band (case-level tally) | held (re-exam pending) | same |
@@ -66,7 +67,7 @@ completeness only. Cause of death is a conclusion, not a fact — it can be reco
 evidence, and when a rule is wrong we fix the rule and recompute; the raw facts never move.
 ② **Reconciliation gate** — papers in must equal papers out (scored + bench + held; no bucket
 missing, no cell extra). **No balanced books, no board** — there is no "publish first, patch
-later." ③ **Brain-identity double-check** — an identity assertion per paper, and no assertion
+later." ③ **Brain-identity double-check** (verifying every answer really came from the model it claims) — an identity assertion per paper, and no assertion
 means no score; we also re-check *passed* papers against the reverse error.
 No set of controls stops everything (hardware breaks), but it can make a bad verdict live
 less than one reconciliation cycle.
@@ -82,13 +83,13 @@ from a wrong call.
 
 ---
 
-## Addendum: triple-exam scores filed (mimo-v2.6-pro / mimo-v2.6-flash, case-level three-value tally)
+## Addendum: triple-exam (three models back to back in one issue) scores filed (mimo-v2.6-pro / mimo-v2.6-flash, case-level three-value tally)
 
-Same-day CommandCode triple exam; the two mimo legs have finished and are filed on the
+Same-day CommandCode triple exam; the two mimo legs (a leg = one model line of the three) have finished and are filed on the
 **case-level three-value tally** (pass / fail / held). Multi-variant cases (several variants
 sharing one bundle) count as **one case**; for repeated runs the final attempt decides.
 
-| Model | Pass | Fail | Held | Case board |
+| Model | Pass | Fail | Held | Total cases |
 |---|---|---|---|---|
 | `xiaomi/mimo-v2.6-pro` | **17** | **6** | **1** | 24 |
 | `xiaomi/mimo-v2.6-flash` | **13** | **6** | **5** | 24 |
@@ -99,7 +100,7 @@ sharing one bundle) count as **one case**; for repeated runs the final attempt d
   scored fail, not held.
 - **mimo-v2.6-flash 13/6/5**: the 5 holds = 2 bench holds (A-d511f9e8, A-be92627f, both
   `invalid_infrastructure`) + **3 pending-review holds** (A-791e90ac, A-1fd3683a, A-13854d9d —
-  terminal `valid_task_failure` with d2 = `no code block`, the same failure across brains, so we
+  terminal (the run's end-state label) `valid_task_failure` with d2 (the defect-hunt score, algorithm private) = `no code block`, the same failure across brains, so we
   **do not convict**: neither pass nor fail, named and held for review). The same cases scored on
   the mimo-v2.6-pro leg (6/6, 2/2, 5/5), so the cases are passable; the flash leg's no-code-block
   pattern is logged as a delivery-reliability observation.
@@ -107,8 +108,8 @@ sharing one bundle) count as **one case**; for repeated runs the final attempt d
   delivered" = fail on the mimo-v2.6-pro leg, and `invalid_infrastructure` = bench hold on the
   mimo-v2.6-flash leg. Each paper is recorded by its own leg's terminal state.
 - **Review closed (2026-09-23)**: mimo-v2.6-flash's three review-held cases (A-791e90ac / A-1fd3683a / A-13854d9d) were reclassified to `invalid_infrastructure` after forensic review (upstream truncation swallowed the already-formed answers — no fault to the model). Final buckets for the leg: **13 pass / 6 fail / 5 invalid, zero held**; the [2026-W39 issue](2026-W39.en.md) is in sync.
-- **Wire note**: both lanes' state.db is single-brain clean (59/88 usage rows, zero foreign
-  brains); the external-agent lane is handled under the declared discipline, with no wire audit.
+- **Wire note** (wire check = verifying every answer really came from the model it claims): both lanes' state.db (the exam runtime's log database) is single-brain clean (59/88 usage rows, zero foreign
+  brains — no trace of any other model mixed in); the external-agent lane is handled under the declared discipline, with no wire audit.
 - Every number is computed by script from the manifests (27 runs / 24 cases, both legs complete);
   nothing is hand-filled. By the time this page shipped the mimo-v2.6-flash leg had finished; the
   "running" line in this repo's 2026-W39 issue is kept as the press-time snapshot, and this
