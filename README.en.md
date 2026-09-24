@@ -32,7 +32,7 @@ Reading aid: a "cell" is one scored box on the board; "invalid" means the sittin
 
 | Issue | Content | Headline |
 |---|---|---|
-| [2026-W39](results/2026-W39.en.md)（[中文](results/2026-W39.md)） | CommandCode triple exam: grok-4.7 / mimo-v2.6-pro / mimo-v2.6-flash | mimo-v2.6-pro **17/24** (1 invalid); mimo-v2.6-flash **13/24** (3 review holds + 2 invalid); grok-4.7 incomplete, 7 cases held for the 09-29 same-lane re-exam |
+| [2026-W39](results/2026-W39.en.md)（[中文](results/2026-W39.md)） | CommandCode triple exam: grok-4.7 / mimo-v2.6-pro / mimo-v2.6-flash; 09-24 extra sitting: stealth/space-bunny-alpha | mimo-v2.6-pro **17/24** (1 invalid); mimo-v2.6-flash **13/24** (6 fails; 5 invalid, no fault to the model); grok-4.7 incomplete, 7 cases held for the 09-29 same-lane re-exam; extra sitting space-bunny-alpha **15/24** (stealth free window, side by side in the page) |
 | [2026-W38 correction notice](results/2026-W38-correction.en.md)（[中文](results/2026-W38-correction.md)） | W38 full-library review: 0 cells reversed · 14 cells held here; plus the triple-exam mimo model scores filed | 14 W37 ladder papers held (2 high-band cells + case-level tallies), no re-exam while the lane is frozen; addendum: mimo-v2.6-pro 17 pass / 6 fail / 1 held, mimo-v2.6-flash 13 pass / 6 fail / 5 held (A-be92627f failed for different reasons on the two models — recorded separately) |
 | [2026-W37](results/2026-W37.md) | deepseek/deepseek-v4.1-flash full-library debut (23 cases, GA day) | **17/23**; full marks on the UI-build paper (the fifth public pass on that case); 8/9 on the defense case that used to kill everyone; all three same-name vendors checked out as genuine v4.1; adversarial-review and vision are its weak faces |
 

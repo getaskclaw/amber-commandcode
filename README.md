@@ -34,7 +34,7 @@ English: [README.en.md](README.en.md)
 
 | 期 | 内容 | 结论 |
 |---|---|---|
-| [2026-W39](results/2026-W39.md)（[EN](results/2026-W39.en.md)） | CommandCode 三连考：grok-4.7 / mimo-v2.6-pro / mimo-v2.6-flash | mimo-v2.6-pro **17/24**（1 invalid）；mimo-v2.6-flash **13/24**（3 案复核挂起 + 2 案 invalid）；grok-4.7 未完赛，7 案挂起待 09-29 原道重考 |
+| [2026-W39](results/2026-W39.md)（[EN](results/2026-W39.en.md)） | CommandCode 三连考：grok-4.7 / mimo-v2.6-pro / mimo-v2.6-flash；09-24 加餐 stealth/space-bunny-alpha | mimo-v2.6-pro **17/24**（1 invalid）；mimo-v2.6-flash **13/24**（6 负；5 案 invalid 不定模型罪）；grok-4.7 未完赛，7 案挂起待 09-29 原道重考；加餐 space-bunny-alpha **15/24**（stealth 免费窗，页内同端点并排） |
 | [2026-W38 更正特刊](results/2026-W38-correction.md)（[EN](results/2026-W38-correction.en.md)） | W38 全库复核：本仓 0 个计分格改判 · 14 个计分格挂起；另附三连考 mimo 两个模型成绩入档 | W37 五档天梯 14 卷挂起（high 档 2 格 + 案级计数），车道冻结期内不补考；加餐：mimo-v2.6-pro 判过 17 / 判负 6 / 挂起 1，mimo-v2.6-flash 判过 13 / 判负 6 / 挂起 5（A-be92627f 同一案在两个模型因不同原因失败，分别记账） |
 | [2026-W37](results/2026-W37.md) | deepseek/deepseek-v4.1-flash 全库首考（23 案，GA 当日） | **17/23**；UI 搭建卷满分（第五个公开通过该案的成绩）；防御钉 8/9 刷新全员纪录；同名跨厂商三家核对，确认都是真 v4.1；审查/视觉面是弱项 |
 
