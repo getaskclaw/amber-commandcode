@@ -2,16 +2,16 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "background": "white",
   "title": {
-    "text": "2026-W39 board composition (CommandCode triple)",
+    "text": "2026-W39 board composition (CommandCode triple + stealth extra)",
     "fontSize": 16,
     "anchor": "start",
-    "subtitle": "both mimo legs complete; grok-4.7 awaits the 09-29 weekly reset; m26f's three text cases reclassified invalid after review (no fault to the model)",
+    "subtitle": "both mimo legs complete; grok-4.7 awaits the 09-29 weekly reset; m26f text cases reclassified invalid (no fault to the model); space-bunny-alpha finished the full library 15/24 in the 09-24 free window",
     "subtitleFontSize": 11,
     "subtitleColor": "#777",
     "subtitlePadding": 6
   },
   "width": 480,
-  "height": 160,
+  "height": 200,
   "config": {
     "font": "Noto Sans CJK SC",
     "axis": {
@@ -92,6 +92,41 @@
       },
       {
         "lane": "mimo-v2.6-pro",
+        "cat": "not run",
+        "ord": 4,
+        "n": 0,
+        "pos": 24.0
+      },
+      {
+        "lane": "space-bunny-alpha (09-24 extra)",
+        "cat": "pass",
+        "ord": 0,
+        "n": 15,
+        "pos": 7.5
+      },
+      {
+        "lane": "space-bunny-alpha (09-24 extra)",
+        "cat": "fail",
+        "ord": 1,
+        "n": 9,
+        "pos": 19.5
+      },
+      {
+        "lane": "space-bunny-alpha (09-24 extra)",
+        "cat": "held",
+        "ord": 2,
+        "n": 0,
+        "pos": 24.0
+      },
+      {
+        "lane": "space-bunny-alpha (09-24 extra)",
+        "cat": "invalid",
+        "ord": 3,
+        "n": 0,
+        "pos": 24.0
+      },
+      {
+        "lane": "space-bunny-alpha (09-24 extra)",
         "cat": "not run",
         "ord": 4,
         "n": 0,

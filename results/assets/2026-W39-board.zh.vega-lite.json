@@ -2,16 +2,16 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "background": "white",
   "title": {
-    "text": "2026-W39 榜单构成（CommandCode 三连考）",
+    "text": "2026-W39 榜单构成（CommandCode 三连考 + stealth 加餐）",
     "fontSize": 16,
     "anchor": "start",
-    "subtitle": "mimo 两腿已完赛；grok-4.7 待 09-29 周窗重置原道重考；m26f 文本三案经复核结案改定 invalid（不定模型罪）",
+    "subtitle": "mimo 两腿已完赛；grok-4.7 待 09-29 周窗重置原道重考；m26f 文本三案经复核结案改定 invalid（不定模型罪）；space-bunny-alpha 09-24 免费窗全库完赛 15/24",
     "subtitleFontSize": 11,
     "subtitleColor": "#777",
     "subtitlePadding": 6
   },
   "width": 480,
-  "height": 160,
+  "height": 200,
   "config": {
     "font": "Noto Sans CJK SC",
     "axis": {
@@ -92,6 +92,41 @@
       },
       {
         "lane": "mimo-v2.6-pro",
+        "cat": "未考 not run",
+        "ord": 4,
+        "n": 0,
+        "pos": 24.0
+      },
+      {
+        "lane": "space-bunny-alpha（09-24 加餐）",
+        "cat": "胜 pass",
+        "ord": 0,
+        "n": 15,
+        "pos": 7.5
+      },
+      {
+        "lane": "space-bunny-alpha（09-24 加餐）",
+        "cat": "负 fail",
+        "ord": 1,
+        "n": 9,
+        "pos": 19.5
+      },
+      {
+        "lane": "space-bunny-alpha（09-24 加餐）",
+        "cat": "挂起 held",
+        "ord": 2,
+        "n": 0,
+        "pos": 24.0
+      },
+      {
+        "lane": "space-bunny-alpha（09-24 加餐）",
+        "cat": "invalid",
+        "ord": 3,
+        "n": 0,
+        "pos": 24.0
+      },
+      {
+        "lane": "space-bunny-alpha（09-24 加餐）",
         "cat": "未考 not run",
         "ord": 4,
         "n": 0,
