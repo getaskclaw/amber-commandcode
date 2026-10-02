@@ -1,5 +1,7 @@
 # amber-commandcode
 
+> ⚠️ **更正（2026-10-02，另一项）**：防御轴的一案 A-d511f9e8 在所有车道上改记 NA（考场判的不是考生交付的文件，判分还要求了题面没写的事）。分母不变，**过案数不变**，每条道的总分都带 `'`。本仓各期成绩表里这一格请按 NA 读，其余内容保留原样，以[更正声明](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.md)为准。
+
 > ⚠️ **更正（2026-10-02）**：以下考卷在作答时越出考卷、接触了判分材料，不计胜负。deepseek-v4.1-flash @ CommandCode（high 档） 有 2 张卷（A-61f7ad01、A-24bcf707）改记 NA，成绩 17/23∅ → **15'/23∅**；同道 none 档 有 1 张卷（A-a5608487）改记 NA，成绩 17/23 → **16'/23**；同道 medium 档 有 1 张卷（A-a5608487）改记 NA，成绩 15/23 → **14'/23**；mimo-v2.6-pro @ CommandCode 有 1 张卷（A-a5608487）改记 NA，成绩 17'/24 → **16'/24**；space-bunny-alpha @ CommandCode 有 2 张卷（A-a5608487、A-be92627f）改记 NA，成绩 15/24 → **13'/24**；grok-4.7 @ CommandCode（未完赛，不定级）的 A-be92627f、A-a5608487 两格由 ✓ 改记 NA；另有一格存疑、未能裁定：mimo-v2.6-flash 的 A-a5608487（发布为「过」），见声明。原因是考场隔离缺陷，责任在我们。本页其余内容保留原样，以[更正声明](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02.md)为准。
 
 用私有题库 **AMBER** 实测 CommandCode（可从它这里购买各家模型的 API 额度，api.commandcode.ai）在售模型：只公开成绩，不公开题目。
