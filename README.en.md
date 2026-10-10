@@ -14,26 +14,19 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results o
 
 <!-- scoreboard:start -->
 
-![amber-commandcode scoreboard: cases passed per axis for mimo-v2.6-pro, space-bunny-alpha, deepseek-v4.1-flash](results/assets/scoreboard.en.png?v=20261009)
-
-| Group | Axis | What it tests | mimo-v2.6-pro · [W39](results/2026-W39.en.md) | space-bunny-alpha · [W39](results/2026-W39.en.md) | deepseek-v4.1-flash · [W37](results/2026-W37.md) |
-|---|---|---|:-:|:-:|:-:|
-| Building | Coding | Implement the spec correctly | 5/6 | 4/6 | 4/6 · 1 NA |
-|  | Delivery | Done means handed in | 3/3 | 2/3 | 3/3 |
-|  | Ops | Follow the runbook | 5/6 · 1 NA | 5/6 · 1 NA | 5/6 · 1 NA |
-|  | Requirements | Ship A when A was asked | 1/1 | 0/1 | 1/1 |
-|  | Convergence | Finish, don't spin | 1/1 | 0/1 | — |
-| Judging | UI | Build the page to the mock | 0/1 | 1/1 | 1/1 |
-|  | Vision | Spot defects in screenshots | 0/1 | 0/1 | 0/1 |
-|  | Defense | Plug every hole in the validator | 0/2 · 1 NA | 0/2 · 2 NA | 0/2 · 1 NA |
-|  | Attribution | Pin defects to their root cause | 0/1 | 0/1 | 0/1 |
-|  | Review | Inspect someone else's work | 1/2 · 1 NA | 1/2 · 1 NA | 1/2 · 1 NA |
-|  | **Total** |  | **16'/24** | **13'/24** | **15'/23** |
-
-- **Full marks for all**: none.
-- **None passed by any**: Vision, Defense, Attribution (not one pass on these axes; NA does not count as a fail).
-- **Where they differ** (numbers follow the table columns, left to right): Coding 5/6 vs 4/6 vs 4/6 · 1 NA, Delivery 3/3 vs 2/3 vs 3/3, Requirements 1/1 vs 0/1 vs 1/1, UI 0/1 vs 1/1 vs 1/1.
-- **Otherwise identical**: Ops 5/6 · 1 NA, Review 1/2 · 1 NA.
+| Group | Axis | What it tests | laguna-s-2.1 (CommandCode) · [W41](results/2026-W41.en.md) | mimo-v2.6-pro · [W39](results/2026-W39.en.md) | space-bunny-alpha · [W39](results/2026-W39.en.md) | deepseek-v4.1-flash · [W37](results/2026-W37.md) |
+|---|---|---|:-:|:-:|:-:|:-:|
+| Building | Coding | Implement the spec correctly | 4/6 · 2 NA | 5/6 | 4/6 | 4/6 · 1 NA |
+|  | Delivery | Done means handed in | 2/3 | 3/3 | 2/3 | 3/3 |
+|  | Ops | Follow the runbook | 6/6 | 5/6 · 1 NA | 5/6 · 1 NA | 5/6 · 1 NA |
+|  | Requirements | Ship A when A was asked | 0/1 | 1/1 | 0/1 | 1/1 |
+|  | Convergence | Finish, don't spin | 1/1 | 1/1 | 0/1 | — |
+| Judging | UI | Build the page to the mock | 0/1 | 0/1 | 1/1 | 1/1 |
+|  | Vision | Spot defects in screenshots | 0/1 | 0/1 | 0/1 | 0/1 |
+|  | Defense | Plug every hole in the validator | 0/2 · 1 NA | 0/2 · 1 NA | 0/2 · 2 NA | 0/2 · 1 NA |
+|  | Attribution | Pin defects to their root cause | 0/1 · 1 NA | 0/1 | 0/1 | 0/1 |
+|  | Review | Inspect someone else's work | 1/2 · 1 NA | 1/2 · 1 NA | 1/2 · 1 NA | 1/2 · 1 NA |
+|  | **Total** |  | **14'/24** | **16'/24** | **13'/24** | **15'/23** |
 
 Each cell = cases passed / cases on that axis (a case is one scored task). NA = the case was voided or put on hold; it counts as neither a pass nor a fail, and a total carrying `'` contains at least one NA. Most axes hold only 1–2 cases, so one case moves the reading: do not over-read small gaps. Sittings are from different weeks; every number is a snapshot.
 
